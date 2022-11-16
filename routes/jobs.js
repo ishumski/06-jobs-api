@@ -12,7 +12,7 @@ const router = express.Router()
 router.get('/', getAllJobs)
 router.get('/:id', getJob)
 router.post('/', createJob)
-router.put('/:id', updateJob)
+router.patch('/:id', updateJob)
 router.delete('/:id', deleteJob)
 
 module.exports = router
